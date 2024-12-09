@@ -1,0 +1,282 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FED172; /* Soft yellow background */
+    color: #000000; /* Deep purple for text */
+}
+
+.body p a{
+    text-align: center;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #612E37; /* Warm plum */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #231650; /* Deep purple */
+}
+
+/* Input and Button Alignment */
+form input, form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    margin-bottom: 5px;
+    border: 1px solid #3b3b3b; /* Bright orange for input borders */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    flex: 0 0 auto;
+    width: auto;
+    background-color: #B83A14; /* Deep orange-red for buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #F3742B; /* Brighter orange */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #FED172; /* Soft yellow for row dividers */
+    font-size: 1.0em;
+}
+
+table th {
+    background-color: #612E37; /* Warm plum */
+    color: white;
+}
+
+table td {
+    background-color: #FED172; /* Soft yellow for table rows */
+}
+
+/* Link Styles */
+a {
+    color: #612E37; /* Warm plum for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Message Styles */
+.message {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.message.success {
+    background-color: #1c600b; /* Green for success */
+}
+
+.message.error {
+    background-color: #B83A14; /* Deep orange-red for error */
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0; /* Add spacing between the buttons and the table */
+    padding: 10px;
+    background-color: #FED172; /* Bright orange background for contrast */
+    border-radius: 8px;
+}
+
+.action-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #231650; /* Deep purple */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons .btn:hover {
+    background-color: #612E37; /* Warm plum */
+}
+
+/* Clear Search Link */
+.clear-search {
+    color: #F3742B; /* Bright orange for subtle highlight */
+    font-size: 1.1em;
+}
+
+/* Page Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #612E37; /* Warm plum */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #612E37;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    table th, table td {
+        font-size: 1em;
+    }
+}
+
+/* Styling for the delete confirmation page */
+.confirmation-container {
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #FED172;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-container h1 {
+    font-size: 1.5em;
+    color: #612E37; /* Warm plum */
+    margin-bottom: 20px;
+}
+
+.confirmation-container p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.confirmation-container .confirm-btn,
+.confirmation-container .back-btn {
+    font-size: 1.1em;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.confirmation-container .confirm-btn {
+    background-color: #6BBF59; /* Green for confirm */
+    color: white;
+    border: none;
+}
+
+.confirmation-container .confirm-btn:hover {
+    background-color: #5E994B;
+}
+
+.confirmation-container .back-btn {
+    background-color: #B83A14; /* Deep orange-red for back */
+    color: white;
+    text-align: center;
+}
+
+.confirmation-container .back-btn:hover {
+    background-color: #F3742B;
+}
+
+/* Styling for the applicant details in a white box */
+.applicant-details {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    width: 30%;
+    margin-left: 35%;
+    box-sizing: border-box;
+}
+
+/* Individual applicant detail styling */
+.applicant-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Specific styles for the login link section */
+.login-link-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-link-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.login-link-container a:hover {
+    text-decoration: underline;
+}
